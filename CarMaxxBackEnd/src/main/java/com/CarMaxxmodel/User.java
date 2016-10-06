@@ -34,5 +34,9 @@ package com.CarMaxxmodel;
 		public void setEmail(String email) {
 			this.email = email;
 		}
+		public void setId1(String id) {
+			// TODO Auto-generated method stub
+			
+		}
 	 
 }

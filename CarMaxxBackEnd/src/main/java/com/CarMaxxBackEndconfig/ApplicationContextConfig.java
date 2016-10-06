@@ -16,6 +16,7 @@ import org.springframework.orm.hibernate4.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import com.CarMaxxmodel.User;
+import com.niit.carmaxxbackend.product;
 
 @Configuration
 @ComponentScan("com.CarMaxxBackEndconfig")
@@ -32,6 +33,7 @@ public class ApplicationContextConfig {
 	 System.out.println("before");
 	    sessionBuilder.addAnnotatedClasses(User.class);
 	 System.out.println("after");
+	 sessionBuilder.addAnnotatedClasses(product.class);
 	    return sessionBuilder.buildSessionFactory();
 	    
 	}
